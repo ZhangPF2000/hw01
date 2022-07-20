@@ -9,3 +9,5 @@ add_subdirectory(stbiw)
 
 add_executable(main main.cpp rainbow.cpp mandel.cpp)
 target_link_libraries(main PUBLIC stbiw)
+target_include_directories(stbiw PUBLIC stbiw) # 允许通过尖括号导入头文件 <stb_image_write.h>
+  
